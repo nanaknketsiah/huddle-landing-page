@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --violet:hsl(257,40%,49%);
+    --softmagenta:hsl(300, 69%, 71%);
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+  body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background-color: var(--violet);
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  .main__wrapper{
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .landing__page__wrapper{
+    padding: 60px;
+  }
+
+  .landing__page__main{
+    margin-top: 100px;
+  }
+.landing__page__col{
+    display: flex;
+    /* align-items: center; */
+    /* gap: 50px; */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.landing__page__image{
+    width: 100%;
+}
+
+.landing__page__heading{
+    font-size: 45px;
+    color: white;
+    text-align: left;
+    max-width: 500px;
+    /* outline: 1px solid green; */
+    margin-top: 40px;
+}
+.landing__page__paragraph{
+    color: white;
+    max-width: 550px;
+}
+
+.landing__page__button{
+    font-size: 20px;
+    padding: 15px 72px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: white;
+    color: var(--violet);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    cursor: pointer;
+}
+.landing__page__button:active{
+    border: 1px solid var(--softmagenta);
+}
+.landing__page__icons__wrapper{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 100px;
+}
+
+.landing__page__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.landing__page__icons__circle{
+border: 1px solid white;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media (min-width: 1920px){
+    .main__wrapper{
+        background-image: url("./images/bg-desktop.svg");
+        background-size: cover;
+      }
+
+      .landing__page__col{
+        display: flex;
+        /* align-items: center; */
+        /* gap: 50px; */
+      justify-content: space-between;
+      gap: 0px;
+    }
+    
+      .landing__page__heading{
+        font-size: 65px;
+        color: white;
+        text-align: left;
+        max-width: 800px;
+        /* outline: 1px solid green; */
+        margin-top: 40px;
+    }
+
+      .landing__page__paragraph{
+        color: white;
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .main__wrapper{
+        background-image: url("./images/bg-mobile.svg");
+        background-size: contain;
+      }
+
+    .landing__page__col{
+        display: flex;
+        gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .landing__page__logo{
+        width: 150px;
+        height: auto;
+    }
+    .landing__page__wrapper{
+        padding: 30px;
+      }
+    .landing__page__main{
+        margin-top: 60px;
+      }
+
+      .landing__page__heading{
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        /* outline: 1px solid green; */
+        margin-top: 30px;
+    }
+    .landing__page__paragraph{
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .landing__page__button{
+        font-size: 16px;
+        padding: 10px 52px;
+        border-radius: 30px;
+        margin-top: 20px;
+        background-color: white;
+        color: var(--violet);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border: none;
+        cursor: pointer;
+    }
+    .landing__page__button__wrapper{
+        text-align: center;
+    }
+    .landing__page__icons__wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .landing__page__icons__circle{
+        border: 1px solid white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .landing__page__social__icons{
+            width: 25px;
+            height: 25px;
+        }
+}
